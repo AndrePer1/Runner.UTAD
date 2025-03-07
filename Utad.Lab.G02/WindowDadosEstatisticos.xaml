@@ -1,0 +1,31 @@
+﻿<Window x:Class="Utad.Lab.G02.WindowDadosEstatisticos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Utad.Lab.G02"
+        mc:Ignorable="d"
+        Title="Dados Estatisticos" Height="480" Width="870" WindowStartupLocation="CenterScreen" Icon="\Imagens\ICON TRABALHO.png">
+    <Grid>
+        <Calendar x:Name="Calendario" HorizontalAlignment="Center" Margin="0,26,0,0" SelectionMode="SingleRange" VerticalAlignment="Top" Height="152"/>
+        <ListView x:Name="lvDados" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="37,238,37,95" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Total Kilometros" DisplayMemberBinding="{Binding TotalKilometros}"></GridViewColumn>
+                    <GridViewColumn Header="Tempo Total" DisplayMemberBinding="{Binding totalTempo}"/>
+                    <GridViewColumn Header="Atividade Mais Longa (distância)" DisplayMemberBinding="{Binding AtividadeMaisLonga}"/>
+                    <GridViewColumn Header="Atividade Mais Demorada" DisplayMemberBinding="{Binding AtividadeMaisDemorada}"/>
+                    <GridViewColumn Header="Quilómetro Mais Rápido" DisplayMemberBinding="{Binding QuilometroMaisRapido}"/>
+                    <GridViewColumn Header="Dez Quilómeros Mais Rápidos" DisplayMemberBinding="{Binding DezQuilometrosMaisRapidos}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Voltar" x:Name="btnVoltar" HorizontalAlignment="Left" Margin="37,389,0,0" VerticalAlignment="Top" Width="80" Height="33" Click="btnVoltar_Click"/>
+        <Button Content="Escolher" x:Name="btnEscolher" HorizontalAlignment="Center" Margin="0,183,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="btnEscolher_Click"/>
+
+
+    </Grid>
+    <Window.Background>
+        <ImageBrush ImageSource="\Imagens\BgAplicWithoutIcon.jpeg"/>
+    </Window.Background>
+</Window>

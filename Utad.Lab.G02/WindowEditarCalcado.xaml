@@ -1,0 +1,33 @@
+﻿<Window x:Class="Utad.Lab.G02.WindowEditarCalcado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Utad.Lab.G02"
+        mc:Ignorable="d"
+        Icon="/Imagens/ICON TRABALHO.png"
+        Title="Editar Calçado" Height="400" WindowStartupLocation="CenterScreen" Width="400">
+    <Grid>
+        <Image Source="/Imagens/BgAplicWithoutIcon.jpeg" Stretch="UniformToFill">
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Margin="102,168,0,0" TextWrapping="Wrap" Text="Data de compra:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="tbkilodisp" Foreground="White" Background="#FF5DA4F9" HorizontalAlignment="Left" Margin="234,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,252,0,0" TextWrapping="Wrap" Text="Quilómetros disponiveis:" VerticalAlignment="Top" Foreground="White" FontSize="16" />
+        <TextBlock HorizontalAlignment="Left" Margin="20,214,0,0" TextWrapping="Wrap" Text="Limite Máx. de Quilometros:" VerticalAlignment="Top" Foreground="White" FontSize="16" />
+        <TextBox x:Name="tblimkilo" Foreground="White" Background="{x:Null}" HorizontalAlignment="Left" Margin="234,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="239,333,0,0" VerticalAlignment="Top" Width="85" Click="btnCancelar_Click"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="113,32,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="tbmarca" Foreground="#FF5DA4F9" Background="{x:Null}" HorizontalAlignment="Left" Margin="200,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="102,71,0,0" TextWrapping="Wrap" Text="Modelo:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="tbmodelo" Foreground="#FF5DA4F9" Background="{x:Null}" HorizontalAlignment="Left" Margin="200,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="132,117,0,0" TextWrapping="Wrap" Text="Cor:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="tbcor" Foreground="#FF5DA4F9" Background="{x:Null}" HorizontalAlignment="Left" Margin="200,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.493,0.496"/>
+        <TextBlock HorizontalAlignment="Left" Margin="93,287,0,0" TextWrapping="Wrap" Text="Inativo:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <CheckBox x:Name="cbsim" Content="Sim" HorizontalAlignment="Left" Margin="168,291,0,0" VerticalAlignment="Top" IsEnabled="False" Foreground="White"/>
+        <CheckBox x:Name="cbnao" Content="Não" HorizontalAlignment="Left" Margin="240,291,0,0" VerticalAlignment="Top" IsEnabled="False" Foreground="White"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="60,333,0,0" VerticalAlignment="Top" Width="86" Click="btnSalvar_Click"/>
+        <DatePicker x:Name="dpData" Background="#FF5DA4F9" HorizontalAlignment="Left" Margin="234,167,0,0" VerticalAlignment="Top" Width="128"/>
+
+    </Grid>
+
+</Window>

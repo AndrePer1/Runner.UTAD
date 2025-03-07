@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tiposRegistoFisico>
+	<tipoRegistoFisico id = "1" nome = "Peso" unidade = "KG"/>
+	<tipoRegistoFisico id = "2" nome = "Altura" unidade = "cm"/>
+</tiposRegistoFisico>

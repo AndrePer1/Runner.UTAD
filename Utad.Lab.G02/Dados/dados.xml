@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dados>
+	<perfil nome = "Nome do Utilizador" dataNascimento = "01/01/2000" fotografiaPath="Imagens/profilee.png" sexo=""/>
+	<alteracoesFisicas/>
+</dados>
